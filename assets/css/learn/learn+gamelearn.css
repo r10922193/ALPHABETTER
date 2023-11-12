@@ -1,0 +1,316 @@
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* wrapper 用於設定網頁的整體寬度 */
+.wrapper{
+    background-image: url(../../images/background/watercolorpink.png);
+    background-position: bottom;
+    background-size: 100% 85%;
+    background-repeat: no-repeat;
+    cursor: default;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    overflow: scroll;
+}
+
+
+
+/* ---------- Header ---------- */
+
+.header-area {   
+    left: 0;
+    /*position: absolute;*/
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.7s ease 0s;
+    background-color: #5A7262; 
+}
+
+.transparent-bar.stick {
+    background-color: #5A7262;
+    color: #f3a395;
+    border-bottom: 0;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 9999;
+}
+
+.logo,
+.logo-menu-wrapper,
+.header-site-icon,
+.sticky-logo {
+    transition: all 0.7s ease 0s;
+}
+
+.stick .logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.sticky-logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.stick .sticky-logo {
+    display: block;
+    padding-top: 4px;
+}
+.stick .logo-menu-wrapper {
+    padding-top: 0px;
+}
+.stick .header-site-icon {
+    padding-top: 17px;
+}
+.stick .main-menu ul li a {
+    line-height: 60px;
+}
+
+.hm-3-padding .header-site-icon,
+.hm-4-padding .header-site-icon {
+    padding-top: 64px;
+}
+
+
+
+/* -- Header Logo -- */
+
+.logo-menu-wrapper {   /*Logo上方間隔*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo-small-device {
+    padding-top: 30px;
+    display: none;
+}
+
+
+
+/* -- Header Side Icon -- */
+
+.header-site-icon {   /*圖標按鈕位置*/
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 36px;
+}
+
+.same-style {   /*圖標按鈕間隔*/
+    margin-left: 16px;
+}
+
+.same-style:first-child {   /*第一個圖標按鈕左邊間隔*/
+    margin-left: 0px;
+}
+
+.same-style button,
+.same-style a {   /*圖標按鈕樣式*/
+    background-color: transparent;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.same-style button:hover,
+.same-style a:hover {   /*鼠標靠近圖標按鈕*/
+    color: #f3a395;
+}
+
+
+/* -- Header Back Button -- */
+
+.header-area .header-back .btn-success {
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background-color: #5A7262;
+    border-color: #5A7262;
+    text-transform: uppercase;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.header-area .header-back .btn-success:hover {
+    color: #f3a395;
+}
+
+
+
+/* ---------- Section Card ---------- */
+
+.jumbotron-fluid {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: transparent;
+}
+
+.jumbotron-fluid h6,
+.jumbotron-fluid h4{
+    color: #2A2A2A;
+    text-transform: uppercase;
+}
+
+.jumbotron-fluid h6 {
+    font-size: 25px;
+    display: inline;
+    letter-spacing: 5px;
+    padding: 15px 40px;
+    margin: auto;
+    line-height: 80px;
+    color: #2A2A2A;
+    border: 1px solid #E9E2CF;
+    background-color: #E9E2CF;
+}
+
+.jumbotron-fluid h4 {
+    font-size: 16px;
+    background: #E0B39C;
+    display: inline;
+    letter-spacing: 5px;
+    padding: 15px 40px;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    width: 650px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.li_word {
+    width: 650px;
+    float: left;
+    list-style: none;
+    padding-bottom: 25px;
+}
+
+.ul_word {
+    width: 6500px;
+    transition: all 1s;
+}
+
+
+/* -- Section Card Slide Button -- */
+
+.slide_btn {
+    float: left;
+    background-color: transparent;
+    width: 60px;
+    text-align: center;
+    color: #2A2A2A;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 ;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+}
+
+.slide_btn:hover {
+    cursor: pointer;
+    background-color: #5A7262;
+    color: white;
+}
+
+
+/* -- Section Card Word -- */
+
+.card {
+  max-width: 650px;
+  height: 430px;
+  /*box-shadow: 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+div.card {
+  position: relative;
+  margin: 0 auto;
+}
+
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-inner h2 {
+    font-size: 51px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+}
+
+.card-inner p {
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+    font-family: 'Noto Serif TC', serif;
+}
+
+
+/* -- Section Card Audio -- */
+
+.audio-wrap {
+    width: 500px;
+    position: relative;
+}
+
+.audio {
+    width: 100%;
+    height: auto;
+}
+
+.buttonbar {
+    /*position: absolute;*/
+    bottom: 20px;
+    right: 20px;
+}
+
+.ion-ios-play {
+    margin: 5px 0 0;
+    border: 0;
+    color: #fff;
+    background: #2F4C4C;
+    cursor: pointer;
+    width: 26px;
+    text-align: center;
+    padding: 5px;
+}

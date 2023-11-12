@@ -1,0 +1,319 @@
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* wrapper 用於設定網頁的整體寬度 */
+.wrapper{
+    background: rgba(0, 0, 0, 0.0) none repeat scroll 0 0;
+    cursor: default;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    overflow: scroll;
+}
+
+
+
+/* ---------- Header ---------- */
+
+.header-area {   
+    left: 0;
+    /*position: absolute;*/
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.7s ease 0s;
+    background-color: #5A7262; 
+}
+
+.transparent-bar.stick {
+    background-color: #5A7262;
+    color: #f3a395;
+    border-bottom: 0;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 9999;
+}
+
+.logo,
+.logo-menu-wrapper,
+.header-site-icon,
+.sticky-logo {
+    transition: all 0.7s ease 0s;
+}
+
+.stick .logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.sticky-logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.stick .sticky-logo {
+    display: block;
+    padding-top: 4px;
+}
+.stick .logo-menu-wrapper {
+    padding-top: 0px;
+}
+.stick .header-site-icon {
+    padding-top: 17px;
+}
+.stick .main-menu ul li a {
+    line-height: 60px;
+}
+
+.hm-3-padding .header-site-icon,
+.hm-4-padding .header-site-icon {
+    padding-top: 64px;
+}
+
+
+
+/* -- Header Logo -- */
+
+.logo-menu-wrapper {   /*Logo上方間隔*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo-small-device {
+    padding-top: 30px;
+    display: none;
+}
+
+
+
+/* -- Header Side Icon -- */
+
+.header-site-icon {   /*圖標按鈕位置*/
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 36px;
+}
+
+.same-style {   /*圖標按鈕間隔*/
+    margin-left: 16px;
+}
+
+.same-style:first-child {   /*第一個圖標按鈕左邊間隔*/
+    margin-left: 0px;
+}
+
+.same-style button,
+.same-style a {   /*圖標按鈕樣式*/
+    background-color: transparent;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.same-style button:hover,
+.same-style a:hover {   /*鼠標靠近圖標按鈕*/
+    color: #f3a395;
+}
+
+
+/* -- Header Back Button -- */
+
+.header-area .header-back .btn-success {
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background-color: #5A7262;
+    border-color: #5A7262;
+    text-transform: uppercase;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.header-area .header-back .btn-success:hover {
+    color: #f3a395;
+}
+
+
+
+/* ---------- Section Question ---------- */
+
+.jumbotron {
+    width: 100%;
+    position: relative;
+    background-image: url(../../images/background/dot-grid.png);
+    background-position: top;
+}
+
+.jumbotron h2,
+.jumbotron h4 {
+    color: #2A2A2A;
+}
+
+.jumbotron h4 {
+    font-size: 16px;
+    background: #E0B39C;
+    display: inline;
+    letter-spacing: 5px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+}
+
+.jumbotron h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.thumbnail {
+    background-color: whitesmoke;
+    height: 320px;
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+#regForm {
+    margin: auto;
+    width: 70%;
+    min-width: 300px;
+}
+
+.tab {
+    display: none;
+  }
+
+.column {
+    color: #2A2A2A;
+    display: block;
+    left: 35%;
+    max-width: 400px;
+    position: relative;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.column input {
+    height: 0;
+}
+ 
+.checkmark {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    height: 25px;
+    width: 25px;
+    background-color: #E9E2CF;
+    border-radius: 50%;
+}
+  
+.column input:checked ~ .checkmark:after {   /*選取 radio 按鈕後新增·樣式*/
+    display: block;
+}
+
+.column .checkmark:after { /*·樣式設定*/
+    top: 8.5px;
+    left: 8.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.column input:checked ~ .checkmark {   /*·被選取後顏色*/
+    background-color: #f3a395;
+}
+
+.column:hover input ~ .checkmark {   /*除已選取·外其餘·的顏色*/
+    background-color: #E9E2CF;
+}
+  
+
+/* -- Section Number Step Button -- */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    margin-top: 40px;
+    background-color: #5A7262;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    opacity: 0.3;
+}
+  
+.step.active {
+    color: #5A7262;
+    opacity: 1;
+}
+
+.step.finish {
+    /* background-color: #CC8A56; */
+}
+  
+  
+/* -- Section Next Button -- */
+
+.next_btn {
+    color: #5A7262;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: transparent;
+    width: 150px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 800px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.next_btn:hover {
+    color: #ffffff;
+    background-color: #5A7262;
+    cursor: pointer;
+
+}
+
+
+

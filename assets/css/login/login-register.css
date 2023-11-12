@@ -1,0 +1,296 @@
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* wrapper 用於設定網頁的整體寬度 */
+.wrapper{
+    background: rgba(0, 0, 0, 0.0) none repeat scroll 0 0;
+    cursor: default;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    overflow: scroll;
+}
+
+
+
+/* ---------- Header ---------- */
+
+.header-area {   
+    left: 0;
+    /*position: absolute;*/
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.7s ease 0s;
+    background-color: #5A7262; 
+}
+
+.transparent-bar.stick {
+    background-color: #5A7262;
+    color: #f3a395;
+    border-bottom: 0;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 9999;
+}
+
+.logo,
+.logo-menu-wrapper,
+.sticky-logo {
+    transition: all 0.7s ease 0s;
+}
+
+.stick .logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.sticky-logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.stick .sticky-logo {
+    display: block;
+    padding-top: 4px;
+}
+.stick .logo-menu-wrapper {
+    padding-top: 0px;
+}
+.stick .main-menu ul li a {
+    line-height: 60px;
+}
+
+
+
+/* -- Header Logo -- */
+
+.logo-menu-wrapper {   /*Logo上下間隔*/
+    padding-top: 37px;
+    padding-bottom: 30px;
+}
+
+.logo-small-device {
+    padding-top: 30px;
+    display: none;
+}
+
+
+
+/* ---------- Banner ---------- */
+
+.jumbotron {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url(../../images/background/dot-grid.png);
+    background-position: top;
+}
+
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h4 {
+    color: #2A2A2A;
+    text-transform: uppercase;
+}
+
+.jumbotron h4 {
+    font-size: 16px;
+    background: #E0B39C;
+    display: inline;
+    letter-spacing: 5px;
+    padding: 15px 40px;
+}
+
+.jumbotron h2 {
+    font-size: 22px;
+    margin-top: 0;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.jumbotron h1 {
+    font-size: 51px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+
+
+/* ---------- Login Register ---------- */
+
+.breadcrumb-content > h2 {
+    color: #353535;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.login-form-container {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 80px;
+    text-align: left;
+}
+
+.login-text {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-text h2 {
+    color: #444;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.login-text span {
+    font-size: 15px;
+}
+
+.login-form-container input {
+    background-color: #f7f7f7;
+    border: medium none;
+    color: #7d7d7d;
+    font-size: 12px;
+    font-weight: 500;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.login-form-container input::-moz-placeholder,
+.login-form-container input::-webkit-placeholder {
+    color: #7d7d7d;
+    opacity: 1;
+}
+
+.login-toggle-btn {
+    padding: 10px 0 19px;
+}
+
+.login-form-container input[type="checkbox"] {
+    height: 15px;
+    margin: 0;
+    position: relative;
+    top: 1px;
+    width: 17px;
+}
+
+.login-form-container label {
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.login-toggle-btn > a {
+    color: #666;
+    float: right;
+    transition: all 0.3s ease 0s;
+}
+
+.login-toggle-btn > a:hover {
+    color: #f3a395;
+}
+
+.login-register-tab-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.login-register-tab-list.nav a h4 {   /*Register樣式*/
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 20px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    color: #5A7262;   
+}
+
+.login-register-tab-list.nav a.active h4,
+.login-register-tab-list.nav > a h4:hover {   
+    color: #f3a395;
+}
+
+.login-form button {
+    border: medium none;
+    cursor: pointer;
+}
+
+.btn-style {
+  background-color: #f3a395;
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 18px;
+  padding: 13px 33px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.6s ease-in-out 0s;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.ptb { 
+    padding-top: 30px;
+    padding-bottom: 130px;
+}
+
+input {
+    background: #eceff8;
+    border: 2px solid #eceff8;
+    height: 45px;
+    box-shadow: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #626262;
+    width: 100%;
+}
+
+input:focus {
+    background: transparent;
+    border: 2px solid #4FC1F0;
+}
+
+/*----- Footer -----*/
+footer{
+	background-color: #2A2A2A;
+	text-align: center;
+}
+
+footer p{
+	font-size: 10px;
+	color: #ffffff;
+	padding: 10px 0px;
+}

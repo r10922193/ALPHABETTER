@@ -1,0 +1,433 @@
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* wrapper 用於設定網頁的整體寬度 */
+.wrapper{
+    background: rgba(0, 0, 0, 0.0) none repeat scroll 0 0;
+    cursor: default;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    overflow: scroll;
+}
+
+
+
+/* ---------- Header ---------- */
+
+.header-area {   
+    left: 0;
+    /*position: absolute;*/
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.7s ease 0s;
+    background-color: #5A7262; 
+}
+
+.transparent-bar.stick {
+    background-color: #5A7262;
+    color: #f3a395;
+    border-bottom: 0;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 9999;
+}
+
+.logo,
+.logo-menu-wrapper,
+.header-site-icon,
+.sticky-logo {
+    transition: all 0.7s ease 0s;
+}
+
+.stick .logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.sticky-logo {
+    display: none;
+    transition: all 0.7s ease 0s;
+}
+.stick .sticky-logo {
+    display: block;
+    padding-top: 4px;
+}
+.stick .logo-menu-wrapper {
+    padding-top: 0px;
+}
+.stick .header-site-icon {
+    padding-top: 17px;
+}
+.stick .main-menu ul li a {
+    line-height: 60px;
+}
+
+.hm-3-padding .header-site-icon,
+.hm-4-padding .header-site-icon {
+    padding-top: 64px;
+}
+
+
+
+/* -- Header Logo -- */
+
+.logo-menu-wrapper {   /*Logo上方間隔*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo-small-device {
+    padding-top: 30px;
+    display: none;
+}
+
+
+
+/* -- Header Side Icon -- */
+
+.header-site-icon {   /*圖標按鈕位置*/
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 36px;
+}
+
+.same-style {   /*圖標按鈕間隔*/
+    margin-left: 16px;
+}
+
+.same-style:first-child {   /*第一個圖標按鈕左邊間隔*/
+    margin-left: 0px;
+}
+
+.same-style button,
+.same-style a {   /*圖標按鈕樣式*/
+    background-color: transparent;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.same-style button:hover,
+.same-style a:hover {   /*鼠標靠近圖標按鈕*/
+    color: #f3a395;
+}
+
+
+/* -- Header Back Button -- */
+
+.header-area .header-back .btn-success {
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background-color: #5A7262;
+    border-color: #5A7262;
+    text-transform: uppercase;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.header-area .header-back .btn-success:hover {
+    color: #f3a395;
+}
+
+
+
+/* ---------- Banner ---------- */
+
+.jumbotron {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: url(../../images/background/dot-grid.png);
+    background-position: top;
+}
+
+.jumbotron h2 {
+    font-size: 25px;
+    margin-top: 0;
+    font-weight: 700;
+    color: #2A2A2A;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.jumbotron a {
+    margin-top: 60px;
+}
+
+.jumbotron h1 {
+    font-size: 51px;
+    font-weight: 700;
+    color: #f3a395;
+    text-transform: uppercase;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.thumbnail {
+    background-color: whitesmoke;
+    height: 320px;
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+}
+
+
+
+/*---------- Section Option ----------*/
+
+.section-option-timer {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section-option-timer h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #9d8a76;
+    font-weight: 300;
+}
+
+.cube:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -31px;
+    left: -31px;
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 163, 249, 0.1);
+}
+
+.cube {
+    border: 2px solid #f3a395;
+    padding: 40px;
+    position: relative;
+    background: #fff;
+}
+
+.cube h1 {
+    /* color: white;
+    background-color: rgba(32, 117, 97, 0.4); */
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.option {
+    display: inline-block;
+    margin: auto;
+    padding: 70px;
+}
+
+.opt-select {
+    position: relative;
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 42px 0;
+    width: 450px;
+}
+  
+.opt-select select {
+    display: none;
+    /*background-color: #E9E2CF;*/
+    letter-spacing: 4px;
+    padding: 15px;
+    width: 320px;
+    border: none;
+    text-transform: uppercase;
+    border: 0.5px solid#47584c;
+    color: #2A2A2A;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.select-selected {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 0.5px solid#47584c;
+    color: #9d977d;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 900;
+}
+  
+.select-selected:after {   /* 下拉式選單下拉按鈕 */
+    position: absolute;
+    content: "";
+    top: 65px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-color: #E9E2CF transparent transparent transparent;
+}
+  
+.select-selected.select-arrow-active:after {   /* 開啟下拉式選單收回按鈕 */
+    border-color: transparent transparent #E9E2CF transparent;
+    top: 50px;
+}
+  
+.select-items div,.select-selected {   /* 下拉式選單個別選項內容 */
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent #E9E2CF transparent;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+    color: #2A2A2A;
+}
+  
+.select-items {   /* 下拉式選單背景 */
+    position: absolute;
+    background-color: white;
+    /* top: 100%; */
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+.select-hide {   /* 下拉式選單收回功能 */
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {   /* 鼠標靠近下拉式選單按鈕 */
+    background-color: #E9E2CF;
+}
+
+.time {
+    display: inline-block;
+    margin: auto;
+    padding: 70px;
+}
+
+.count {
+    position: relative;
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.count h2 {
+    font-weight: 900;
+    color: #2A2A2A;
+    font-size: 43px;
+}
+
+.section-option-timer .btn-play,
+.section-option-timer .btn-play:not(:disabled):not(.disabled):active {   /*按鈕樣式*/
+    color: #E5B0A4;
+    font-size: 25px;
+    background-color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-option-timer .btn-play:hover {   /*鼠標靠近按鈕*/
+    color: #ffffff;
+    background-color: #E5B0A4;
+    border: 2px solid #E5B0A4;
+}
+
+.section-option-timer .btn-timer,
+.section-option-timer .btn-timer:not(:disabled):not(.disabled):active {   /*按鈕樣式*/
+    color: #E5B0A4;
+    font-size: 25px;
+    background-color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-option-timer .btn-timer:hover {   /*鼠標靠近按鈕*/
+    color: #ffffff;
+    background-color: #E5B0A4;
+    border: 2px solid #E5B0A4;
+}
+
+.section-option-timer .btn-next,
+.section-option-timer .btn-next:not(:disabled):not(.disabled):active {   /*按鈕樣式*/
+    color: #E5B0A4;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 8px 35px;
+    background-color: transparent;
+    border-color: #E5B0A4;
+    border: 2px solid #E5B0A4;
+    border-style: dotted;
+    width: 300px;
+    display: block;
+    margin: 80px auto;
+    position: relative;
+}
+
+.section-option-timer .btn-next:hover {   /*鼠標靠近按鈕*/
+    color: #ffffff;
+    background-color: #9d8a76;
+    border: 2px solid #9d8a76;
+}
+
+
+
+/*----- Footer -----*/
+footer{
+    background-color: #2A2A2A;
+    text-align: center;
+}
+
+footer p{
+    font-size: 10px;
+    color: #ffffff;
+    padding: 10px 0px;
+}
